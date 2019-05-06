@@ -1,0 +1,96 @@
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+    <info>
+        <title>Helló, Schwarzenegger!</title>
+        <keywordset>
+            <keyword/>
+        </keywordset>
+    </info>
+    <section>
+        <title>Szoftmax Py MNIST</title>
+        <para>
+            Python
+        </para>
+        <para>
+            Megoldás videó: <link xlink:href="https://youtu.be/j7f9SkJR3oc">https://youtu.be/j7f9SkJR3oc</link>      
+        </para>
+        <para>
+            Megoldás forrása: <link xlink:href="https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0">https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0</link> (/tensorflow-0.9.0/tensorflow/examples/tutorials/mnist/), <link xlink:href="https://progpater.blog.hu/2016/11/13/hello_samu_a_tensorflow-bol">https://progpater.blog.hu/2016/11/13/hello_samu_a_tensorflow-bol</link>  
+        </para>
+        <para>
+             A program elején importájuk a tensorflow modult, amely segítségével töltjük be az MNIST adatbázisban tárolt adatokat. Az x_train, y_train, x_test, y_test változókban eltároljuk az MNIST adatbázisban található képeket, és hozzá tartozó címkéket, illetve a tesztképeket és címkéket. Ezután konvertáljuk az x_train és x_test tömbök értékeit <type>float</type> típusúra, majd normalizáljuk az értékeket, hogy 0 és 1 közé essenek. Importálunk még hat modult, amelyek a neurális háló felépítéséhez szükségesek. Ezután létrehozzuk a neurális háló modelljét, majd feltanítjuk a hálót. Ezután pedig kiértékeljük a neurális háló "tudását" a teszt képekkel és címkékkel.
+        </para>
+    </section>        
+
+<!--
+    <section>
+        <title>Szoftmax R MNIST</title>
+        <para>
+            R            
+        </para>
+        <para>
+            Megoldás videó:
+        </para>
+        <para>
+            Megoldás forrása:                
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+    </section>        
+-->
+    <!--
+        í
+    -->
+    <section>
+        <title>Mély MNIST</title>
+        <para>
+            Python            
+        </para>
+        <para>
+            Megoldás videó:
+        </para>
+        <para>
+            Megoldás forrása:
+            <link xlink:href="https://gitlab.com/nagyfazek06/programozas/blob/master/deep.py">https://gitlab.com/nagyfazek06/programozas/blob/master/deep.py</link>                
+        </para>
+        <para>
+            A program elején importájuk a szükséges modulokat. Az importálások után létrehozunk négy függvényt, amelyek a programot hivatottak rövidíteni. A függvények után létrehozzuk a neurélis háló rétegeit. Ebben a programban 5 rétegű a neurális háló. A rétegek megadása után megadjuk, hogy milyen módon szeretnénk kiértékeltetni a bemenetet, majd megadjuk, hogy milyen algoritmussal tanítjuk fel a hálót. Ezután következik a tanítás, illetve minden századik iterációban leteszteljük a háló tudását.
+        </para>
+    </section>        
+<!--
+    <section>
+        <title>Deep dream</title>
+        <para>
+            Keras            
+        </para>
+        <para>
+            Megoldás videó:
+        </para>
+        <para>
+            Megoldás forrása:                
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+    </section>        
+-->                  
+    <section>
+        <title>Minecraft-MALMÖ</title>
+        <para>
+        </para>
+        <para>
+            Megoldás videó: <link xlink:href="https://youtu.be/bAPSu3Rndi8">https://youtu.be/bAPSu3Rndi8</link>      
+        </para>
+        <para>
+            Megoldás forrása:   https://gitlab.com/nagyfazek06/programozas/blob/master/malmo.py         
+                
+        </para>
+        <para>
+              A Minecraft-MALMÖ projektet azért hozta létre a Microsoft, hogy a Minecraft játékon belül lehessen mesterséges intelligenciákat létrehozni, tanítani és tesztelni.
+            Az én programomban alapvetően az a célja Steve-nek, a karakternek, hogy ne akadjon el 5 percen keresztül, miközben folyamatosan halad. Ezt úgy éri el többnyire, hogy megvizsgálja az előtte lévő 12 blokkot, és bizonyos feltételek teljesülése esetén ugrik, vagy elfordul és halad más irányban. Steve még közel sem tökéletes, ugyanis a lávatavakat és a szakadékokat még nem tudja kikerülni.  
+            A programom megírásához sokat felhasználtam a példaprogramokból.
+            A programban először importálom a szükséges modulokat a program futásához, illetve a MALMÖ API-t. A <function>restart_minecraft</function> függvény arra szolgál, hogy a mission lefutása után a Minecraft tudja fogadni a következő missiont. A <function>run</function> függvényben található a mission pontos megadása, illetve a mission alatti vezérlés. a missionXML <type>string</type>-ben van megadva a világ generálásának szabályai, Steve kiindulási helyzete, illetve itt van megadva, hogy figyelje a körülötte lévő blokkokat. Ezután megadom, hogy 300 másodpercig fusson a mission, illetve, hogy 640x480-as felbontással fusson a Minecraft. Megadom, hogy Minecraft kliens milyen címen és milyen porton éri el, majd megpróbál a program csatlakozni. Az első while ciklus vár addig, amíg a kliens készen áll a program általi irányítást fogadni. A második while ciklusban van Steve vezérlése. A ciklus elején az első két elágazás arra szolgál, hogy Steve át tudja vagy fel tudjon ugrani az akadályokra és ne folyamatosan ugráljon utána. A harmadik elágazás arra szolgál, hogy váltakozva jobbra és balra is forduljon Steve. A következő elégazás arra szolgál, hogy eldöntse, melyik égtáj felé néz Steve. Erre azért van szükség, hogy a megfelelő környező blokkokat lehessen vizsgálni. a blocks nevű kétdimenziós tömbbe töltöm bele a vizsgált blokkok nevét. Ezután a program az alapján, hogy Steve merre néz, megvizsgálja az előtte lévő blokkokat, hogy mit csináljon (ugorjon vagy forduljon).
+        </para>
+    </section>        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+</chapter> 

@@ -1,0 +1,119 @@
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+    <info>
+        <title>Helló, Mandelbrot!</title>
+        <keywordset>
+            <keyword/>
+        </keywordset>
+    </info>
+    <section>
+        <title>A Mandelbrot halmaz</title>
+        <para>                
+        </para>
+        <para>
+            Megoldás videó:
+        </para>
+        <para>
+            Megoldás forrása:     https://gitlab.com/nagyfazek06/programozas/blob/master/mandelbrot.cpp           
+        </para>
+        <para>
+            A program elején létrehozunk néhány változót a precompiler számára, amelyek a kimeneti kép méretét
+határozzák meg, illetve vizsgált tartományt a komplex számsíkon.
+A GeneratePNG függvény paraméterként megkapja a program által generált kép adatait pixelenként
+a tomb nevű int típusú N*M-es mátrixban tárolva. A függvényen belül létrehozunk egy N*M pixeles
+PNG kiterjesztésű képfájlt, amelybe az egymásba ágyazott for ciklus pixelenként beletölti az adott pixelre
+vonatkozó adatokat, majd a for ciklus után kiírja a képfájlt lemezre "kimenet.png" néven.
+A main függvényen belül létrehozzuk az N*M-es mátrixot, amelyben tároljuk a kép pixelenkénti adatait,
+beállítjuk a komplex számsíkon való lépegetés lépésközét a "dx" és "dy" változóban, majd létrehozunk
+három Komplex típusú változót, amely a komplex számokat fogja tárolni a Mandelbrot-halmaz kiszámításához.
+Ezután belép a porgram a for ciklusba, ahol lépked a komplex számokkal a megadott tartományban a
+megadott lépésközzel, majd a benne lévő while ciklus meghatározza a kép megfelelő pixelének színét an-
+nak függvényében, hogy a while ciklus fejében megadott formula hány iteráció alatt lesz nagyobb vagy
+egyenlő, mint négy. Miután a for ciklus bejárta a komplex számsík megadott tartományát, meghívja a
+GeneratePNG függvényt.(Segített Petrus Tamás József)
+        </para>
+    </section>        
+        
+    <section>
+        <title>A Mandelbrot halmaz a <filename>std::complex</filename> osztállyal</title>
+        <para>
+        </para>
+        <para>
+            Megoldás videó:
+        </para>
+        <para>
+            Megoldás forrása: https://gitlab.com/nagyfazek06/programozas/blob/master/mandel_complex.cpp                
+        </para>
+        <para>
+            Változás az előző programhoz képest hogy c++ beépített complex osztályát használva lépegetünk a komplex számsíkon. 
+        </para>
+    </section>        
+                
+    <section>
+        <title>Biomorfok</title>
+        <para>
+        </para>
+        <para>
+            Megoldás videó: <link xlink:href="https://youtu.be/IJMbgRzY76E">https://youtu.be/IJMbgRzY76E</link>
+        </para>
+        <para>
+            Megoldás forrása: <link xlink:href="https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/Biomorf">https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/Biomorf</link>
+        </para>
+        <para>
+            A biomorfok olyan alakzatok, amelyek ránézésre akár élő organizmusok is lehetnének, viszont nem muszáj
+természetes eredetűnek lennie az alakzatnak (magyarán, akár lehetnek számítógép által generáltak is).
+5.4
+FT
+Ez a program nagyon hasonlít az előzőhöz, ugyanis ennek az alapja a Mandelbrot-halmaz. A legjelentősebb
+eltérés az előző programhoz képest, hogy itt más a megadott formula a pixelek színeinek számításánál.
+        </para>                        
+    </section>                     
+
+    <section>
+        <title>A Mandelbrot halmaz CUDA megvalósítása</title>
+        <para>
+        </para>
+        <para>
+            Megoldás videó: 
+        </para>
+        <para>
+            Megoldás forrása:  
+        </para>
+    </section>                     
+
+    <section>
+        <title>Mandelbrot nagyító és utazó C++ nyelven</title>
+        <para>
+            Építs GUI-t a Mandelbrot algoritmusra, lehessen egérrel nagyítani egy területet, illetve egy pontot
+            egérrel kiválasztva vizualizálja onnan a komplex iteréció bejárta z<subscript>n</subscript> komplex számokat!
+        </para>
+        <para>
+            Megoldás forrása:  https://gitlab.com/nagyfazek06/programozas/blob/master/mandelbrot_nagyito.cpp
+        </para>
+        <para>
+            Megoldás videó: 
+        </para>
+        <para>
+            A feladat megoldásához SFML-t használtam. A feladatban a mandelbrot halmaz meghatározására az 5.2-es
+feladat megoldását vettem alapul.
+            A compute függvény határozza meg minden pixel színét, ugyanazon módszerrel, mint az 5.2-es feladatban.
+A következő néhány függvény segédfüggvény a nagyításhoz illetve a halmaz feltérképezéséhez.
+A main függvényben létrehozom a grafikus megjelenítéshez szükséges objektumokat, változókat. A
+while cikluson belül először eseménykezelés található, amely azért felelős, hogy mi történjen, ha a fel-
+használó a képernyőre kattint, illetve ha a egér görgőjével görget. Majd meghívom a compute függvényt,
+ezután pixelenként kirajzoltatom a kiszámolt mandelbrot-halmazt.
+            
+            (Segített Petrus Tamás József)  
+        </para>
+    </section>                     
+                                                                                                                                                                            
+    <section>
+        <title>Mandelbrot nagyító és utazó Java nyelven</title>
+        <para>
+            https://gitlab.com/nagyfazek06/programozas/blob/master/mandelb.java
+        </para>
+        <para>
+            Az osztály konstruktorában létrehozzuk a GUI-t, illetve megadjuk a paramétereit (méret, méretezhetőség), létrehozzuk a kontroll objektumokat, a gombokat, amelyekkel változtatható a vizsgált komplex szám tartomány. A <function>plotPoints</function> eljárás felelős a vizsgált tartomány bejárásáért és az alapján a halmaz elemeinek kiszámításáért. A <function>actionPerformed</function> eljárás felelős azért, hogy a felhasználói interakciót lehetővé tegye az által, hogy "megmondja", mi történjen, ha a felhasználó rákattint egy gombra.
+        </para>
+    </section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+</chapter>                
