@@ -18,7 +18,7 @@
             Megoldás forrása: https://github.com/nagyfazek/antfarm           
         </para>
         <para>
-            ennek a programnak a célja hogy a hangyák utakat hozzanak létre amellyen közlekednek. Ha egy út már létezik a hangyák azon közlekednek.
+            Ennek a programnak a célja hogy a hangyák utakat hozzanak létre amellyen közlekednek, szimulálja őket. Ha egy út már létezik a hangyák azon közlekednek.
         </para>            
     </section>        
     <section>
@@ -31,10 +31,10 @@
             Megoldás videó: 
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://gitlab.com/nagyfazek06/programozas/blob/master/ant.java"></link>               https://gitlab.com/nagyfazek06/programozas/blob/master/ant.java
+            Megoldás forrása:    https://gitlab.com/nagyfazek06/programozas/blob/master/ant.java
         </para>
         <para>
-            A program elején importáljuk a szükséges csomagkat amelyek kezelik a az ablakot, egeret és billentyűzetet. A game_of_life  egyetlen publikus osztályába található a main, a program belépési pontja. Létrehozunk egy RenderArea típusú változót, amelyet majd a game_of_life konstruktorában inicializálunk. A konstruktor emellett még beállítja az ablak címét és egyéb tulajdonságait.
+            A program elején importáljuk a szükséges csomagkat melyek kezelik a az out- illetve inputot. A game_of_life  egyetlen publikus osztályába található a main. Egy RenderArea típusú változót hozunk létre, amelyet majd a game_of_life konstruktorában inicializálunk. A konstruktor emellett még beállítja az ablak címét és egyéb tulajdonságait.
         </para>            
     </section>        
     <section>
@@ -64,6 +64,7 @@
         </para>
         <para>
             Ez a program azt vizsgálja hogy mennyire vagyunk képesek odafigyelni a játékbeli karakterünkre. Ezen kívül azt is vizsgálja hogy ha szemelől tévesztjük karakterünket akkor mennyi idő alatt találjuk meg újra.
+            Ez az online játékoknal fontos főleg a MOBA típusuaknál. Ebbe a műfajba elég gyakori, hogy nagyobb harcoknál a zűrzavar közepén elvesztjük szemelől a karakterünket így nem tudjuk a játszma kimenetelét befolyásolni ami akár annak elvesztéséhez vezethet.
         </para>            
     </section>        
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

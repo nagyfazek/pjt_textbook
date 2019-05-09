@@ -17,7 +17,7 @@
             Megoldás forrása:   https://gitlab.com/nagyfazek06/programozas/blob/master/tm.c             
         </para>
         <para>
-            A programban helyet foglalok a memóriában egy <type>double</type>-öket tartalmazó alsó háromszögmátrixnak. Majd k=0-tól a mátrix minden elemének 1.1-es lépésközzel értékül adtam k-t. Ezután a mátrix standard uotputra való kiíratása történik. Következőnek felszabadítom a pointerek által lefoglalt memóriacímeket, majd a "return 0"-val jelzem az operációs rendszer felé, hogy a program futása hiba nélkül befejeződött.
+            A program egy double-öket tartalmazó alsó háromszögmátrixnak helyet foglalok a memóriában ,majd k=0-tól a mátrix minden elemének értékül adtuk k-t. Ezután a mátrixot standart outputra kiírjuk. Következőnek felszabadíjuk a memóriacímeket amelyekat a pointerek foglalnak le, majd a "return 0"-val jelezük az operációs rendszer felé, hogy a program hibátlanul lefutott.
         </para>            
     </section>        
     <section>

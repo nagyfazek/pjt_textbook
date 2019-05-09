@@ -19,66 +19,65 @@
             II. heti előadás (11. oldal, az "1.2 Alapfogalmak" című rész):
         </para>
         <para>
-            A programozási nyelvek három szintje van, a gépi nyelv ,ezek azok, amelyek már a processzor nyelvére vannak lefordítva, az assembly szintű nyelv, másnéven gépközeli nyelvek, illetve a magas szintű nyelvek, mint például a java és C++. Minde processzor saját gépi nyelvvel rendelkezik, ezért a forrás szöveget a porcesszor gépi kódjának megfelelő kóddá kell alakítani. Erre két megoldás létezik: a fordítóprogramos és az interpreteres. A fordítóprogramos megoldás a forrásszöveget lefordítja gépi kódra, majd ezután válik futtathatóvá, míg az interpreteres megoldás esetében az interpretes soronként halad végig a forráskódon és olvasási sorrendben hajtja végig az utasításokat, tehát itt nincs szükség futtatás előtti fordításra. Minden programozási nyelvnek van saját hivatkozási nyelve, azaz szabványa. Ebben vannak definiálva a szintaktikai és szemantikai szabályok, legtöbb esetben angolul. Léteznek implementációk, melyek operációs rendszereken való fordítóprogram-, vagy interpreter megvalósítást jelent. Ezek nem kompatibilisek egymással. Létezhet egy operációs rendszeren több implementáció is, ezek sem feltétlen kompatibilisek egymással. Manapság a programozáshoz IDE-ket használunk (Integrated Development Environment), amelyek grafikus programok, amelyekben általában van beépített szövegszerkesztő, fordító, futtatórendszer.
+            A programozási nyelveknek három szintje van: a gépi nyelv amelyek már a processzor nyelvére vannak lefordítva, az assembly szintű nyelv, azaz gépközeli nyelvek és a magas szintű nyelvek, mint például a java és C++. Minden forrás szöveget megfelelő kóddá kell alakítani, mivel minden processzor saját gépi nyelvvel rendelkezik. Erre két megoldás létezik: azinterpreteres és a fordítóprogramos. Az utóbbi megoldás a forrásszöveget lefordítja, így válik futtathatóvá, míg az előbbi esetében az interpretes soronként halad végig és olvasási sorrendben hajtja végig az utasításokat.A programozási nyelveknek van saját hivatkozási szabványa. Ebben vannak definiálva a szintaktikai és szemantikai szabályok, legtöbbször angolul. Vannak implementációk, amelyek operációs rendszereken interpreter megvalósítást jelent. Ezek nem kompatibilisek egymással. Létezhet egy operációs rendszeren több implementáció is, ezek sem mindig kompatibilisek egymással. Manapság a programozáshoz többnyire  IDE-ket használunk, amelyek grafikus programok, amelyekbe van beépített szövegszerkesztő, fordító és futtatórendszer.
         </para>
         <para>
             III. heti előadás (28. oldal, a "2.4. Adattípusok" című rész):
         </para>
         <para>
-            Az adatabsztrakció első formája az adattípus. Az adattípus rendelkezik névvel, amely azonosítja a típust, például int, double. Léteznek típusos és nem típusos programozási nyelvek. A típususosok engedik, hogy a programozó adja meg a változók típusát. Ilyenek például a C++ és a Java. A nem típusosok automatikusan állapítják meg a változó típusát. Ilyenek például a R és a Python. Adattípusoknak két csoportja van, az egyszerű és az összetett. Az egyszerű adattípusok azok, amelyeket nem lehet tovább bontani, például int. Az összetett típusok például a struktúrák vagy a felhasználó által definiált típusok.
+            Az adatabsztrakció első formája az adattípus. Az adattípus rendelkezik névvel, ami azonosítja a típust. Léteznek nem típusos és típusos programozási nyelvek. A típususosok engedik meg, hogy a programozó megadja a változók típusát,például a Java. A nem típusosok automatikusan adják meg a változó típusát,például a Python. Adattípusoknak két csoportja van, az egyszerű és az összetett. Az egyszerű adattípusokat nem lehet tovább bontani, míg az összetett típusokat lehet, például a struktúrákat.
         </para>
         <para>
             III. heti előadás (34. oldal, a "2.5. A nevesített konstans" című rész):
         </para>
         <para>
-            A nevesített konstansok azt a célt szolgálják a programokban, hogy a konstansoknak olyan nevet adjunk, amely jelképezi annak típusát és értékét. Illetve másik célja, hogy sokszori használat esetén csak a definiálásnál kelljen váloztatni az értékét, ha szükséges. Ezeket a konstansokat mindig definiálni kell.
+            A nevesített konstansok azt a célt szolgálják a programokban, hogy olyan nevet adjunk a konstansoknak, amely jelképezi a típusát és értékét, illetve másik célja, hogy többszöri használat esetén csak a megadásnál kelljen váloztatni az értékét. Ezeket mindig definiálni kell.
         </para>
         <para>
             III. heti előadás (35. oldal a "2.6. A változó" című rész):
         </para>
         <para>
-            A változónak négy komponense van: a név, az attribútomok, a cím és az érték. A név az egy azonosító, a másik három komponenst egy névhez rendeljük hozzá. A legfőbb atribútom, a típus, amely a változó által felvett értéket határolja be. A változóhoz az attribútumok deklarációk segítségével rendelődnek. A deklarációnak különböző fajtáit simerjük: Explicit deklaráció, Implicit deklaráció, Automatikus deklaráció. A változó címe meghatározza a változó értékének a helyét. A címrendelésnek három fajtáját ismerjük: a Statikus tárkiosztás, a Dinamikus tárkiosztás, és a programozó által vezérelt kiosztás. A változó értékének a meghatározására több opció is van: értékadó utasítás, kezdőérték adás.
-        </para>
+            A változónak 4 komponense van: a név, az attribútomok, a cím és az érték. A név az egy azonosító, amit a  másik három komponens egy névhez rendeljük hozzá. A típus a legfőbb atribútom, mely a változó által felvett értéket határolja be. A változóhoz deklarációk segítségével rendelődnek az attribútumok. A deklarációnak több különböző fajtáit simerjük: Explicit deklaráció, Implicit deklaráció, Automatikus deklaráció. A változó értékének a helyét a változó címe határozza meg. A címrendelésnek 3 fajtáját ismerjük: a Statikus, a Dinamikus, és a programozó által vezérelt kiosztást. A változó értékét megadhatjuk értékadó utasítással vagy kezdőérték adással.
+        </para> 
         <para>
             III. heti előadás (39. oldal, az "2.7. Alapelemek az egyes nyelvekben" című rész):
         </para>
         <para>
-            C-ben az aritmetikai típusok az egyszerű típusok, a származtatottak az összetett típusok. A karakter típus elemeit belső kódok alkotják. Logikai típus nincs, a hamis az int 0 az igaz pedig az int 1. A struktúra egy fix szerkeztű rekord. A void tartománya üres. A felsorolásos típusok nem fedhetik egymást. Különböző elemekhez ugyanazt az értéket hozzárendelhetjük.
+            C-ben az aritmetikai típusok az egyszerű típusok és a származtatottak az összetett típusok. A belső kódok alkotják a karakter típus elemeit. Logikai típus nincs ezért a hamis az int 0 és az igaz pedig az int 1. A void tartománya üres. A felsorolás típusok nem fedhetik egymást. Ugyanazt az értéket hozzárendelhetjük különböző elemekhez.
         </para>
         <para>
             IV. heti előadás (46. oldal, az "3. Kifejezések" című rész):
         </para>
         <para>
-            A kifejezések szintaktikai eszközök. A kifejezések formálisan három dologból állnak: operandusokból, operátorokból, kerek zárójelekből. Létezik egyoperandusú(unáris), kétoperandusú(bináris) és háromoperandusú(ternáris) operátor, ezek attól függnek, hogy egy operátor hány operandussal végzi a mőveletet. A kifejezéseknek három alakja lehet: a prefix, az infix, a postfix. A folyamatot, amikor a kifejezés értéke és típusa meghatározódik, a kifejezés kiértékelésének nevezzük. A kifejezéseknek van két típusa: a típusegyenértékűség, és a típuskényszerítés. Azt a kifejezést, amelynek értéke fordítási időben eldől, és a kiértékelését a fordító végzi, azt konstans kifejezésnek hívjuk.
+            A kifejezések szintaktikai eszközök. A kifejezések operandusokból, operátorokból és kerek zárójelekből állnak. Létezik egyoperandusú, kétoperandusú és háromoperandusú operátor, melyek attól függnek, hogy hány operandussal végzi a mőveletet az operátor. A kifejezéseknek 3 alakja lehet: a prefix, az infix és a postfix. Kifejezés kiértékelésének nevezzük azt a folyamatot mikor a kifejezés értéke és a típusa meghatározódik. A kifejezések két típusa: a típusegyenértékűség és a típuskényszerítés. 
         </para>
         <para>
             V. heti előadás (56. oldal, az "4. Utasítások" című rész):
         </para>
         <para>
-            Az utasítások megalkotják a programok egységeit: az algoritmusok egyes lépései, a fordítóprogram ezzel generálja a tárgyporgramot. Két csoportjuk van: a deklarációs utasítások, és a végrehajtó utasítások. A deklarációs utasítások mögött nem áll tárgykód, a fordítóprogramnak szólnak. A végrehajtó utasításokból pedig a fordító generálja a kódot. A végrehajtó utasításokat csoportosíthatjuk: értékadó utasítás, üres
-            utasítás, ugró utasítás, elágaztató utasítás, ciklusszervező utasítás, hívó utasítás, vezérlésátadó utasítás, I/O utasítás, egyéb utassítás. A vezérlési szerkezetet megvalósító utasítások: ugró utasítás, elágaztató utasítás, ciklusszervező utasítás, hívó utasítás, vezérlésátadó utasítás.
+            Az utasítások megalkotják a programok egységeit. Két csoportjuk van: a deklarációs utasítások illetve végrehajtó utasítások. A deklarációs utasítások a fordítóprogramnak szólnak. A végrehajtó utasításokból a fordító generálja a kódot. A végrehajtó utasításokat csoportosíthatjuk többféle képpen: értékadó utasítás, üres
+            utasítás, ugró utasítás, elágaztató utasítás, ciklusszervező utasítás, hívó utasítás, vezérlésátadó utasítás, I/O utasítás, egyéb utassítás. Vezérlési szerkezetet megvalósító utasítások a következőek: ugró utasítás, elágaztató utasítás, ciklusszervező utasítás, hívó utasítás, vezérlésátadó utasítás.
         </para>
         <para>
             VII. heti előadás (78-84. oldal):
         </para>
         <para>
-            A paraméterátadásnak többféle módja is lehet, ezek nyelvfüggőek, hogy melyik nyelv melyiket alkalmazza. 
+            A paraméterátadásnak többféle képpen is történhet, ezek nyelvfüggőek. 
+            Történhet érték szerint, mint a C-ben például. Ekkor az aktuális paraméter értékét kapja a formális paraméter. Ilyenkor a függvényben nem lehet megváltoztatni a paraméter értékét. Lehet címszerinti a paraméterátadás. Ekkor a formális paraméter címe kapja az aktuális paraméter címét. Itt a függvényben meg lehet változtatni az aktuális paraméter értékét.Eredmény szerinti átadás esetén, a formális paraméter szintén megkapja az aktuális paramétert, de nem használja, hanem beletölti az adatokat. Létezik még érték-eredmény szerinti, ekkor is másolódik a cím illetve használja is az adatokat és a függvény végén belemásolja az adatokat.
         </para>
         <para>
-            Történhet érték szerint, mint a C-ben például. Ekkor a formális paraméter értékül kapja az aktuális paraméter értékét. Ennél a módszernél a függvényben nem lehet megváltoztatni a aktuális paraméter értékét. Lehet címszerinti a paraméterátadás. Ekkor a formális paraméter címe értékül kapja az aktuális paraméter címét. Ilyenkor a függvényben meg lehet változtatni az aktuális paraméter értékét. Lehet eredmény szerinti átadás is, ekkor a formális paraméter szintén megkapja az aktuális paraméter címét, de nem használja, csak a végén beletölti az adatokat. Létezik még érték-eredmény szerinti, ekkor másolódik a cím szintén, és használja is az adatokat, majd a függvény végén belemásolja a formális paraméterbe az adatokat.
-        </para>
-         <para>
             VIII. heti előadás (98. oldal, a "Absztrakt adattípus" című rész):
         </para>
         <para>
-            Olyan adattípus, amely megvalósítja a bezárást vagy információ rejtést. Az ilyen típusú programozási eszeközök műveleteihez a specifikációi által meghatározott interfészen keresztül férhetük hozzá. Így az értékeket véletlenül vagy szándékosan nem ronthatjuk el(biztonságos programozás). Az elmúlt évtizedekben nagyon fontos fogalommá vált és befolyásolta a nyelvek fejlődését. 
+            Az absztrakt adatttípus olyan adattípus, amely megvalósítja a bezárást vagy információ rejtést. Az ilyen típusú programozás művelethez a specifikációi által meghatározott interfészen keresztül férhetük hozzá ezért az értékeket véletlenül vagy szándékosan nem ronthatjuk el. 
         </para>
         <para>
             VIII. heti előadás (121. oldal, a "Generikus programozás" című rész):
         </para>
         <para>
-            A generikus programozás az újrafelhasználhatóság, és így a procedurális absztrakció eszköze. Bármely programozási nyelvbe beépíthető. A generikus programozás lényege: Megadunk egy paraméterezhető forrásszöveg-mintát, ami majd fordítási időben lesz kezelve. A mintaszövegből paraméterek segítségével előállítható egy lefordítható konkrét szöveg. Az újrafelhasználás alatt azt értjük, hogy egy mintaszövegből tetszőleges számú konkrét szöveg generálható, a mintaszöveg típussal is paramétertezhető. A generikus formális paramétereinek száma mindig fix. A paraméterkiértékelésnél a kötés az alapértelmezett, de alkalmazható a név szerinti kötés is. A paraméterátadás változónál értékszerinti, típusnévnél pedig névszerinti. 
-</para>
+            A generikus programozás az újrafelhasználhatóság és a procedurális absztrakció eszköze. Lényege: Megadunk egy paraméterezhető forrásszövegmintát ami fordítási időben lesz kezelve lesz majd kezelve. A mintaszöveg segítségével előállítható egy lefordítható konkrét szöveg. Az újrafelhasználás alatt azt értjük, hogy egy mintaszövegből bármennyi szöveg generálható. A generikus formális paramétereinek száma mindig fix. A paraméterkiértékelésnél a kötés az alapértelmezett, de alkalmazható a név szerinti kötés is. 
+        </para>
+           
     </section>        
     <section>
         <title>Programozás bevezetés</title>
@@ -92,8 +91,8 @@
             V.heti előadás (Vezérlési szerkezetek című fejezet):
         </para>
         <para>
-            Egy nyelv vezérlésátadó utasításai az egyes műveletek végrehajtási sorrendjét határozzák meg. A C nyelvben a pontosvesző az utasításlezáró jel. A kapcsos zárójelekkel deklarációk és utasítások csoportját fogjuk össze egyetlen összetett blokba. Az "if-else" utasítás döntés kifejezésére használjuk, az utasítás először 
-            kiértékeli a kifejezést, és ha ennek az értéke igaz, akkor az első utasítást hajtja végre, ha a kifejezés értéke viszont nem igaz, és van "else" rész, akkor a második utasítás hajtódik végre. Általános szabály, hogy az "else" mindig a hozzá lehközelebb eső "if"-hez tartozik. A "switch utasítás is a többirányú programelágazás egyik eszköze. Összehasonlítja egy kifejezés értékét több egész értékű állandó kifejezés értékével, és az ennek megfelelő utasítást hajtja végre. A "switch" -ben sok "case" és egy "default" talállható. A "default" akkor hajtódik végre, ha egyik "case" ághoz tartozó feltétel sem teljesül. A "while - for" szerkezet először kiértékeli a kifejezést, ha ennek az értéke nem nulla, akkor az utasítás végrehajtódik, ez addig ismétlődik, amíg nulla nem lesz a kifejezés értéke. A "do - while" szerkezet először végrehajtja az utasítást,és csak utána értékeli ki a kifejezést. Ha a kifejezés értéke igaz, akkor az utasítást újból végrehajtják. Ez addig ismétlődik, amíg a kifejezés értéke hamis nem lesz. A "break" lehető teszi, hogy elhagyjuk a ckliusokat, még idő előtt(for,while, do, switch). A "continue" utasítás a "break" utasításhoz kapcsolódik. hatására azonnal megkezdődik a következő iteráció lépés. A "goto" utasítás, akkor előnyös, ha ki akarunk lépni egy több szinten egymásba ágyazott ciklusból(a "break" egyszerre csak egy ciklusból tud kilépni). A címke ugyanolyan szabályok szerint alakítható ki, mint a változók neve és mindig kettőspont zárja.
+            Egy nyelv vezérlésátadó utasításai a műveletek végrehajtási sorrendjét határozzák meg. A C nyelvben a ; az utasításlezáró jel. A kapcsos zárójelekkel deklarációk és utasítások csoportját fogjuk össze egyetlen összetett blokba. Az "if-else" utasítás döntés kifejezésére használjuk, az utasítás először 
+            kiértékeli a kifejezést, és ha igaz, akkor az első utasítást hajtja végre de ha a kifejezés értéke viszont nem igaz, akkor az "else" ág fut le. Általános szabály, hogy az "else" mindg a legközelebbi "if"-hez tartozik. A "switch" utasítás is a többirányú programelágazás egyik eszköze, összehasonlítja egy kifejezés értékét több egész értékű állandó kifejezés értékével és annak megfelelő utasítást hajtja végre. A "while - for" szerkezet először kiértékeli a kifejezést, ha ennek az értéke nem nulla, akkor végrehajtja az utasítást. Ez addig ismétlődik, amíg nulla nem lesz a kifejezé. A "do - while" szerkezet először végrehajtja az utasítást,és csak utána értékeli ki a kifejezést. Ha a kifejezés értéke igaz, akkor az utasítást újból végrehajtja. Ez addig ismétlődik, amíg a kifejezés értéke hamis lesz. A "break" lehető teszi, hogy elhagyjuk a ckliusokat idő előtt. A "goto" utasítás előnyös, ha ki akarunk lépni egy több szinten egymásba ágyazott ciklusból.
         </para>       
         <para>
             V.heti előadás (Függelékből az Utasítások című fejezet):

@@ -176,8 +176,8 @@ false]]></screen>
         <para>
             Megoldás forrása: <link xlink:href=""></link> https://gitlab.com/nagyfazek06/programozas/blob/master/pagerank.c
         </para>
-        <para> A Pagerank egy olyan algoritmus amely az oldalak fontosságát lehet megállapítani. Az algoritmus megvizsgálja az oldalakat majd eldönti melyik a leggyakrabban látogatott oldal. Böngészés során ennek
-               segítségével találhajuk meg a bizonyos oldalakat. 
+        <para> A Pagerank algoritmussal az oldalak fontosságát lehet megállapítani. Az algoritmus megvizsgálja az oldalakat majd eldönti melyik a leggyakrabban látogatott oldal. Böngészés során ennek az algoritmus által előállított rangsor
+               segítségével találhajuk meg a keresett oldalakat. 
         </para>
     </section>
 

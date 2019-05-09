@@ -17,15 +17,14 @@
             Megoldás 
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="2.png" scale="45"/>
+                    <imagedata fileref="3.png" scale="45"/>
                 </imageobject>
             </mediaobject>                
         </para>
         <para>
-            Tanulságok, tapasztalatok, magyarázat..
-         Az unáris számrendszerben való ábrázolás n darab egyforma jel, karakter egymás utáni
+         Az unáris számrendszerben az ábrázolás n darab egyforma karakter egymás utáni
          leírásával történik.
-        A decimálisból unárisba átváltás: folyamatosan 1-eket vonunk ki a számból míg 0 nem lesz, és tároljuk
+        A decimálisból unárisba váltás: egy számból folyamatosan 1-eket vonunk ki mindaddig míg 0 nem lesz, és tároljuk
         a levont egyeseket számát.
         </para>
     </section>        
@@ -64,8 +63,7 @@ aY -> aa
             </programlisting>
         </para>
         <para>
-            Tanulságok, tapasztalatok, magyarázat...
-            Noam Chomsky alkotta meg a generatív nyelvtan elméletét és ő dolgozta ki a Chomsky-hierarchiát. A gramatikának
+            Noam Chomsky alkotta meg a generatív nyelvtan elméletét illetve ő dolgozta ki a Chomsky-hierarchiát. A gramatikának
             három típusa van: a környezet független, a szabályos és a generatív nyelvtan. A környezetfüggetlen nyelvtanban
             a szabályok megadása esetén a bal oldalt nem terminális változó, a jobb oldalt terminális változók állnak.
         </para>
@@ -85,7 +83,6 @@ aY -> aa
             Megoldás forrása:  https://gitlab.com/nagyfazek06/programozas/blob/master/hivatkozas.c
         </para>
         <para>
-            Tanulságok, tapasztalatok, magyarázat...
             A Backus-Naur-forma a különböző nyelvek egyik lehetséges leírási módszere. Ezt a leírási módszert John
 Backus hozta létre, eredetileg az ALGOL programozási nyelvhez. Azóta már a legtöbb programozási
 nyelv szintaxisát BNF-ben adják meg, illetve természetes leírásához is használják alkalmanként. Peter
@@ -137,7 +134,7 @@ végigfutja bájtonként a bemenetet. Ha a lexer futása véget írt, kiíratom 
         </para>
         <para>
             Mi az a leet?
-            A leet lényege hogy a kerektereket ASCII karakterekkel hejetesítse. Ennek célja a titkosítás.
+            A leet lényege hogy a kerektereket ASCII karakterekkel helyetesítse. Ennek célja a titkosítás.
         </para>
     </section>                     
 

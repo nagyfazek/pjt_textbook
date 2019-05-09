@@ -21,9 +21,9 @@
                               java: https://gitlab.com/nagyfazek06/prog1-java/tree/master
         </para>
         <para>
-            Létrehozzuk a polargen nevű osztályt ahol a konstruktorba megadjuk, hogy nincs eltárolt szám.
-            A "kovetkezo" függvény megnézi, hogy van e tárolt szám. Ha nincs generálunk 2db számot. Az egyiket eltárolja majd a logikai változó hamis értéket vesz fel és a másik generált számmal tér vissza.
-            Az objektum orientált programozás természetes, hisz a z emberek a világon mindent objectumként látnak amelyeknek adataik vannak.
+            Létrehozzuk a polargen nevű osztályt ahol a konstruktorba azt adjuk hogy nincs szám.
+            A "kovetkezo" függvény megnézi, hogy van e tárolt szám. Ha nincs generálunk 2darabot. Az egyiket eltárolja majd a logikai változó hamis értéket vesz fel és a másik generált számmal tér vissza.
+            Az objektum orientált programozás természetes, hisz az emberek a világon mindent objectumként látnak amelyeknek adataik vannak.
             
         </para>                
     </section>        
@@ -41,9 +41,9 @@
         </para>
            
     <para>
-         A progra melején létrehoztunk egy Node nevű struktúrát, amely aZ LZW bináris fában lévő csomópontokat reprezentálja. Ennek van egy "char" típusú változója, illetve két önmagára mutató mutató. Az egyik a nullás gyerekre mutat, a másik az egyes gyerekre.
+         A program elején létrehoztunk egy Node nevű struktúrát, amely az LZW bináris fában lévő csomópontokat reprezentálja. Ennek van egy "char" típusú változója, illetve két önmagára mutató mutató. Az egyik a nullás gyerekre mutat, a másik gyerekre.
          A "create_empty" függvény inicializálja a fát egy kitüntetett elemmel, amely "/" -el van jelölve.
-         Az "insert_tree" hozza létre a LZW binfa felépítését. A "main" függvényben a fát feltöltjük x elemmel és ezután inorderben végigjárjuk a fát.
+         Az "insert_tree" hozza létre a LZW binfa felépítését. A "main" függvényben a fát feltöltjük x elemmel és ezután végigjárjuk a fát.
     </para>
     </section> 
     
@@ -59,7 +59,8 @@
             Megoldás forrása:     https://gitlab.com/nagyfazek06/programozas/blob/master/binfa.c            
         </para>
         <para>
-            Inorderben először a fa bal oldalát dolgozzuk fel, majd ennek végeztével a fa jobb oldalát.
+            Preorder: először feldolgozzuk a fa gyökerét majd bejárjuk a fa bal oldalát és ennek végeztével a fa jobb oldalát.
+            Postorder: először bejárjuk a fa bal oldalát majd a jobb oldalát és végezetül feldolgozzuk a gyökeret.
         </para>
     </section>        
                         
@@ -110,9 +111,8 @@
             Megoldás forrása:  https://gitlab.com/nagyfazek06/programozas/blob/master/mozgato.cpp
         </para>
         <para>
-            Ez a megoldás a Tag a gyökér (6.4) feladat kiegészítése másoló és mozgató szemantikával. A másoló szemantika lényege, hogy az értékül kapott (esetünkben) bináris fát értékül adja az eredeti fának, minden érték lemásolásával. 
-            A mozgató szemantika pedig úgy működik, hogy az eredeti bináris fa gyökerét "kicseréli" az értékül kapott fa gyökerével, és az értékül kapott fa gyökerének gyermekeit nullpointerre állítja, 
-hogy a scope elhagyása után lefutó konstruktor ne törölje le az eredetileg létező fát.
+            Ez a megoldás a Tag a gyökér (6.4) feladat kiegészítése másoló és mozgató szemantikával. A másoló szemantika lényege, hogy az értékül kapott bináris fát értékül adja az eredeti fának, minden érték lemásolásával. 
+            A mozgató szemantika pedig úgy működik, hogy az eredeti bináris fa gyökerét kicseréli az értékül kapott fa gyökerével, és az értékül kapott fa gyökerének gyermekeit nullpointerre állítja.
         </para>
     </section>                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
